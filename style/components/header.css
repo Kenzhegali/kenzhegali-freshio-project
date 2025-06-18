@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+    align-items: center;
+}
+.header_links {
+    display: flex;
+    align-items: center;
+}
+.links {
+    margin: 0 10px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.links:hover {
+    color: #BAC34E;
+}
+
+@media(max-width:750px) {
+    .header {
+        display: none;
+    }
+}

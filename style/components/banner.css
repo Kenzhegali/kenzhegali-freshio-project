@@ -1,0 +1,16 @@
+.banner {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #e5e5e5;
+    padding-top: 50px;
+}
+
+.banner_items {
+    opacity: 0.3;
+    transition: 0.4s;
+}
+
+.banner_items:hover {
+    opacity: 1;
+}

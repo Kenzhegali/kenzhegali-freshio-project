@@ -1,0 +1,232 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.main_slider {
+    width: 66%;
+    border-radius: 20px;
+    height: 35vw;
+    position: relative;
+    min-height: 250px;
+}
+
+.main_slider_item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+}
+
+.main_slider_item>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main_slider_item>.wrap {
+    position: relative;
+    z-index: 2;
+}
+
+.main_slider_item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Dancing Script";
+    color: #bac34e;
+}
+
+.main_slider_item h1 {
+    font-size: 40px;
+    color: #0a472e;
+    margin: 30px 0;
+}
+
+.shop_link {
+    display: flex;
+    align-items: center;
+}
+
+.shop_link a {
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    color: #000;
+    font-size: 12px;
+    transition: 0.3s;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.shop_link img {
+    width: 12px;
+    height: 12px;
+    transition: 0.3s;
+}
+
+.shop_link a:hover {
+    color: #bac34e;
+    border-bottom: 2px solid #bac34e;
+}
+
+.shop_link a:hover img {
+    filter: invert(100%) sepia(25%) saturate(4736%) hue-rotate(4deg) brightness(86%) contrast(81%);
+    margin-left: 5px;
+}
+
+.main_info {
+    width: calc(33% - 20px);
+    height: 35vw;
+    min-height: 250px;
+}
+
+.main_info1 {
+    height: calc(50% - 15px);
+    background-image: url(../../img/main_banner2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+    padding: 10%;
+}
+
+.main_info1 h2 {
+    font-size: 24px;
+    color: #0a472e;
+    line-height: 30px;
+    margin-bottom: 10%;
+}
+
+.main_info2 {
+    background-image: url(../../img/main_banner3.webp);
+    height: calc(50% - 15px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_info2 h3 {
+    font-family: "Dancing Script";
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.main_info2 h2 {
+    font-size: 40px;
+    color: #f4ed23;
+    margin: 20px 0;
+}
+
+.main_info2 p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.shop_btn {
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #bac34e;
+    border-radius: 30px;
+    width: 120px;
+    transition: 0.3s;
+    border: none;
+}
+
+.shop_btn:hover {
+    color: #bac34e;
+    background-color: #fff;
+}
+
+.shop_btn:hover a {
+    color: #bac34e;
+}
+
+.shop_btn button {
+    background-color: #bac34e;
+}
+
+.shop_btn a {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.shop_btn img {
+    width: 12px;
+    height: 12px;
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+.shop_btn:hover img {
+    filter: invert(100%) sepia(25%) saturate(4736%) hue-rotate(4deg) brightness(86%) contrast(81%);
+    margin-left: 5px;
+}
+
+@media(max-width:1200px) {
+    .main_slider_item {
+        padding: 5%;
+        width: 100%;
+    }
+
+    .main_info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 25vw;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+
+    .main_info1,
+    .main_info2 {
+        width: calc(50% - 10px);
+        height: 100%;
+    }
+
+    .main_info2 {
+        margin-bottom: 0;
+    }
+
+    .main_info1 {
+        margin-bottom: 0;
+        margin: 0;
+        padding: 5%;
+    }
+
+}
+
+@media(max-width:850px) {
+    .main_slider_item h1 {
+        font-size: 20px;
+    }
+
+    .main_slider_item h4 {
+        font-size: 13px;
+    }
+
+    .main_info1,
+    .main_info2 {
+        width: 100%;
+    }
+
+    .main_info1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .shop_link a {
+        font-size: 7px;
+    }
+}
